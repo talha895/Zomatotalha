@@ -1,3 +1,479 @@
-body{
-    background-color: rgb(239, 206, 223);
+/* General Reset */
+
+
+
+* {
+
+
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
 }
+
+
+
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f9f9f9;
+
+    color: #333;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* Header */
+
+header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: #e23744;
+
+    color: white;
+
+}
+
+
+
+.logo img {
+
+    height: 50px;
+
+}
+
+
+
+header ul {
+
+    display: flex;
+
+    list-style: none;
+
+}
+
+
+
+header ul li {
+
+    margin-left: 20px;
+
+}
+
+
+
+header ul li a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+
+}
+
+
+
+header ul li a:hover {
+
+    color: #ffd700;
+
+}
+
+
+
+/* Header */
+
+header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: #e23744;
+
+    color: white;
+
+}
+
+.logo img {
+
+    background: none; /* Removes any background */
+
+    color: blue; /* Changes the text color to blue */
+
+    font-size: 100px; /* Adjust the size as per your requirement */
+
+    font-weight: bold; /* Makes the text bold */
+
+}
+
+
+
+
+
+.logo img {
+
+    height: 30px;  /* Reduced size */
+
+    width: auto;   /* Maintain aspect ratio */
+
+}
+
+
+
+header ul {
+
+    display: flex;
+
+    list-style: none;
+
+}
+
+
+
+header ul li {
+
+    margin-left: 20px;
+
+}
+
+
+
+header ul li a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+
+}
+
+
+
+header ul li a:hover {
+
+    color: #ffd700;
+
+}
+
+
+
+/* Main Section */
+
+main {
+
+    padding: 50px;
+
+}
+
+
+
+main section {
+
+    text-align: center; 
+
+    padding: 50px;
+
+    margin-bottom: 50px;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* First Section (hero section) */
+
+main section:first-of-type {
+
+    background: url('/img/bg.png') no-repeat center center/cover;
+
+    color: white;
+
+    min-height: 60vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+main section:first-of-type img {
+
+    height: 100px;
+
+}
+
+
+
+main section:first-of-type p {
+
+    font-size: 24px;
+
+    margin-top: 20px;
+
+}
+
+
+
+main section:first-of-type input {
+
+    margin-top: 20px;
+
+    padding: 10px;
+
+    width: 300px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    outline: none;
+
+}
+
+
+
+/* Second Section (Food Delivery Info) */
+
+main section:nth-of-type(2) {
+
+    background-color: #fff;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    color: #333;
+
+}
+
+
+
+main section:nth-of-type(2) h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+    color: #e23744;
+
+}
+
+
+
+main section:nth-of-type(2) p {
+
+    font-size: 18px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.main-features {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+
+
+.feature {
+
+    width: 250px;
+
+    background-color: #e23744;
+
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.feature h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.feature p {
+
+    font-size: 16px;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    background-color: #e23744;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    position: relative;
+
+    bottom: 0;
+
+    width: 100%;
+
+  }
+
+  .search-bar {
+
+    margin: 20px 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+
+.search-bar input {
+
+    width: 80%;
+
+    max-width: 400px;
+
+    padding: 14px 18px;
+
+    font-size: 16px;
+
+    border-radius: 30px; /* Round edges */
+
+    border: 2px solid #444;
+
+    background-color: white;
+
+    color: black;
+
+    outline: none;
+
+    transition: border 0.3s ease;
+
+}
+
+
+
+.search-bar input:focus {
+
+    border-color: blue; /* Border changes on focus */
+
+}
+
+
+
+.search-bar input::placeholder {
+
+    color: #000000;
+
+}
+
+
+
+/* Search button styling */
+
+.search-bar button {
+
+    padding: 12px 20px;
+
+    font-size: 16px;
+
+    border-radius: 30px;
+
+    border: none;
+
+    background-color: #5FFF61;
+
+    color: #000000;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    box-shadow: 0px 5px 10px rgba(255, 126, 95, 0.3); /* Soft shadow for the button */
+
+}
+
+
+
+.search-bar button:hover {
+
+    background-color: #57E206; /* Lighter gradient on hover */
+
+    transform: translateY(-2px); /* Slight lift effect */
+
+}
+
+
+
+.search-bar button:active {
+
+    transform: translateY(1px); /* Button press effect */
+
+    background-color: #91FF5F;
+
+}
+
+    
